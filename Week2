@@ -17,20 +17,20 @@ person3 = {
   "name" : "Eren", 
   "surname" : "Ünalan", 
   "department" : "computer eng.", 
-  "grade" : "preparotory"
+  "grade" : 3
   }
 person4 = {
   "number" : 1030573361, 
   "name" : "Burak", 
   "surname" : "Demir", 
-  "department" : "computer eng.", 
-  "grade" : "preparotory"
+  "department" : "industrial eng.", 
+  "grade" : 2
   }
 person5 = {
   "number" : 1030572324, 
   "name" : "Ercüment", 
   "surname" : "Durak", 
-  "department" : "computer eng.", 
+  "department" : "mechanical eng.", 
   "grade" : "preparotory"
   }
 people = [person1, person2, person3, person4, person5]
@@ -48,5 +48,4 @@ print("\nAre there any 4th graders in even numbers?", message )
 message2 = any(x["grade"] == 4 for x in oddnumber)
 print("\nAre there any 4th graders in odd numbers?", message2)
 print("\nBy Sign Of The Time")
-
 
