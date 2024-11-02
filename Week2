@@ -1,1 +1,52 @@
+person1 = {
+  "number" : 1030526678, 
+  "name" : "Ömer", 
+  "surname" : "Özen", 
+  "department" : "medical fac.", 
+  "grade" : 1
+  }
+person2 = {
+  "number" : 1030571360, 
+  "name" : "Metehan", 
+  "surname" : "Albayrak", 
+  "department" : "biomedical eng.", 
+  "grade" : 4
+  }
+person3 = {
+  "number" : 1030571361, 
+  "name" : "Eren", 
+  "surname" : "Ünalan", 
+  "department" : "computer eng.", 
+  "grade" : "preparotory"
+  }
+person4 = {
+  "number" : 1030573361, 
+  "name" : "Burak", 
+  "surname" : "Demir", 
+  "department" : "computer eng.", 
+  "grade" : "preparotory"
+  }
+person5 = {
+  "number" : 1030572324, 
+  "name" : "Ercüment", 
+  "surname" : "Durak", 
+  "department" : "computer eng.", 
+  "grade" : "preparotory"
+  }
+#print(type(person1))
+people = [person1, person2, person3, person4, person5]
+oddnumber = []
+evennumber = []
+for x in people:
+    if x ["number"] % 2 == 0:
+     evennumber.append(x)
+    else:
+     oddnumber.append(x)
+print("\nEnding in odd numbers;".upper(), oddnumber)
+print("\nEnding in even numbers;".upper(), evennumber)
+message = any(x["grade"] == 4 for x in evennumber)
+print("\nAre there any 4th graders in even numbers?", message )
+message2 = any(x["grade"] == 4 for x in oddnumber)
+print("\nAre there any 4th graders in odd numbers?", message2)
+print("\nBy Sign Of The Time")
 
