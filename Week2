@@ -33,7 +33,6 @@ person5 = {
   "department" : "computer eng.", 
   "grade" : "preparotory"
   }
-#print(type(person1))
 people = [person1, person2, person3, person4, person5]
 oddnumber = []
 evennumber = []
@@ -49,4 +48,5 @@ print("\nAre there any 4th graders in even numbers?", message )
 message2 = any(x["grade"] == 4 for x in oddnumber)
 print("\nAre there any 4th graders in odd numbers?", message2)
 print("\nBy Sign Of The Time")
+
 
